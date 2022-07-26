@@ -1,0 +1,20 @@
+<!--
+     Значения токенов резолвятся через конкретную тему в проекте с дизайн-токенами
+-->
+
+<resources>
+
+    <style name="AwesomeTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="dsBrandColor">@color/green</item>
+        <item name="dsPrimaryTextColor">@color/black</item>
+        <item name="dsRedesignedSuperBrandColor">@null</item>
+    </style>
+
+    <!-- Если полностью независимая тема. Как вариант - наследовать от  AwesomeTheme  -->
+    <style name="AwesomeTheme.Redesign" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="dsBrandColor">@color/red</item>
+        <item name="dsRedesignedSuperBrandColor">@color/purple</item>
+        <item name="dsPrimaryTextColor">@color/white</item>
+    </style>
+
+</resources>

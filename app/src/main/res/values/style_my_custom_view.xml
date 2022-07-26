@@ -1,0 +1,27 @@
+<!--
+     Стиль компонента задается в том же проекте, что и сам компонент,
+     ссылаясь на значения аттрибутов из проекта с токенами.
+
+     Значения токенов резолвятся через конкретную тему в проекте с дизайн-токенами
+
+     При создании нового компонента разработчик будет ссылаться на атрибуты из проекта с дизайн-токенами.
+     В случае наличия нового цвета/размера/типографии помечается как "кандидат в DS" и потом переносится
+
+     По идее, все компоненты должны быть построены на основе ограниченного набора атрибутов DS
+-->
+
+<resources>
+    <style name="Widget.MyView" parent="">
+        <item name="customViewBackgroundDrawable">?dsBrandColor</item>
+        <item name="customViewBackgroundOverlay">?dsRedesignedSuperBrandColor</item>
+        <item name="customViewTextColor">?dsPrimaryTextColor</item>
+
+        <!-- кандидат в DS если дизайнеры не передумают -->
+        <item name="customViewTextDimension">18sp</item>
+    </style>
+
+    <!-- Если нужно задать особую тему в стиле компонента, то можно так:  -->
+    <style name="Widget.MyView.Redesigned" parent="">
+         <item name="android:theme">@style/AwesomeTheme.Redesign</item>
+    </style>
+</resources>

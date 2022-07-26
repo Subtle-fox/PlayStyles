@@ -1,0 +1,10 @@
+<!--
+    Тема приложения наследуется от сгенерированной темы из проекта
+    с дизайн-токенами
+-->
+
+<resources>
+    <style name="Theme.PlayStyles" parent="AwesomeTheme">
+        <item name="customViewStyle">@style/Widget.MyView</item>
+    </style>
+</resources>

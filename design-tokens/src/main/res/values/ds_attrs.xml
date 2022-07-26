@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Ограниченный набор атрибутов, описывающих дизайн-систему
+-->
+<resources>
+    <attr name="dsBrandColor" format="reference|color" />
+    <attr name="dsRedesignedSuperBrandColor" format="reference|color" />
+    <attr name="dsPrimaryTextColor" format="reference|color" />
+</resources>

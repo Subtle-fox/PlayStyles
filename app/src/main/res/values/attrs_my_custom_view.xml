@@ -1,0 +1,16 @@
+<resources>
+
+    <!--
+        Неограниченный набор атрибутов, описывающих кастомный компонент
+    -->
+
+    <attr name="customViewStyle" format="reference"/>
+
+    <declare-styleable name="MyCustomView">
+        <attr name="customViewText" format="string|reference" />
+        <attr name="customViewTextDimension" format="dimension|reference" />
+        <attr name="customViewTextColor" format="color|reference" />
+        <attr name="customViewBackgroundDrawable" format="color|reference" />
+        <attr name="customViewBackgroundOverlay" format="color|reference" />
+    </declare-styleable>
+</resources>
